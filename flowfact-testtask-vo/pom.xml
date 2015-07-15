@@ -7,9 +7,7 @@
     <artifactId>flowfact-testtask</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.flowfact.test</groupId>
   <artifactId>flowfact-testtask-vo</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <name>flowfact-testtask-vo</name>
   <url>http://maven.apache.org</url>
   <properties>

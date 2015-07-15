@@ -8,7 +8,6 @@
   <name>flowfact-testtask</name>
   <modules>
     <module>flowfact-testtask-core</module>
-    <module>flowfact-testtask-dao</module>
     <module>flowfact-testtask-vo</module>
     <module>flowfact-testtask-webapp</module>
   </modules>

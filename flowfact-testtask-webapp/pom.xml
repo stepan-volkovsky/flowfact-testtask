@@ -30,5 +30,15 @@
     	<artifactId>flowfact-testtask-vo</artifactId>
     	<version>1.0-SNAPSHOT</version>
     </dependency>
+    <dependency>
+    	<groupId>com.flowfact.test</groupId>
+    	<artifactId>flowfact-testtask-core</artifactId>
+    	<version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+		<groupId>javax.inject</groupId>
+        <artifactId>javax.inject</artifactId>
+        <version>1</version>
+    </dependency>
   </dependencies>
 </project>
