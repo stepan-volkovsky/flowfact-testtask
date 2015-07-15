@@ -2,12 +2,12 @@ package com.flowfact.test.vo;
 
 public interface IPhoneNumber {
 
-    public abstract long getID();
+    public abstract Long getId();
     
-    public abstract int getCounryCode();
+    public abstract Integer getCountryCode();
 
-    public abstract int getAreaCode();
+    public abstract Integer getAreaCode();
 
-    public abstract int getPhoneNumber();
+    public abstract String getPhoneNumber();
 
 }

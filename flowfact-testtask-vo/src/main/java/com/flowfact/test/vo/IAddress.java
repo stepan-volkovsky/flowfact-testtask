@@ -4,7 +4,7 @@ import java.util.Set;
 
 public interface IAddress {
 
-    public abstract long getID(); //ID
+    public abstract Long getId(); //ID
     
     public abstract String getPostcode(); //PC
 
