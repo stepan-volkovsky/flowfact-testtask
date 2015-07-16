@@ -2,10 +2,13 @@ package com.flowfact.test.dao;
 
 import java.util.Set;
 
+import org.springframework.stereotype.Component;
+
 import com.flowfact.test.IAddressManager;
 import com.flowfact.test.vo.IAddress;
 import com.flowfact.test.vo.IPhoneNumber;
 
+@Component
 public class AddressManager implements IAddressManager{
 
 	public void storeAddreess(IAddress iAddr) {
