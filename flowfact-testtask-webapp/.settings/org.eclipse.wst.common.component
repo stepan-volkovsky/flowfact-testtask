@@ -3,15 +3,6 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <dependent-module archiveName="flowfact-testtask-core.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/flowfact-testtask-core/flowfact-testtask-core">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="flowfact-testtask-vo.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/flowfact-testtask-vo/flowfact-testtask-vo">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="flowfact-testtask-dao.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/flowfact-testtask-dao/flowfact-testtask-dao">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="flowfact-testtask-webapp"/>
         <property name="java-output-path" value="/flowfact-testtask-webapp/target/classes"/>
     </wb-module>

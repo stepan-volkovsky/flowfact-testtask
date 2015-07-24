@@ -1,4 +1,4 @@
-package com.flowfact.test.dao.model;
+package com.flowfact.test.model;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -7,15 +7,15 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.flowfact.test.vo.IAddress;
-import com.flowfact.test.vo.IPhoneNumber;
 
 @Entity
 @Table
-public class Address extends Model implements IAddress {
+public class Address extends Model {
 
 	private static final long serialVersionUID = 1L;
 
@@ -40,7 +40,8 @@ public class Address extends Model implements IAddress {
 	@Column(name = "STREET_LINE_1")
 	private String streetLine1;
 
-	@OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@JoinColumn(name = "ADDRESS_ID")
 	private Collection<PhoneNumber> phoneNumbers;
 
 	public void setPostcode(String postcode) {
@@ -103,8 +104,8 @@ public class Address extends Model implements IAddress {
 		return streetLine1;
 	}
 
-	public Set<IPhoneNumber> getPhoneNumbers() {
-		Set<IPhoneNumber> result = new HashSet<IPhoneNumber>(
+	public Set<PhoneNumber> getPhoneNumbers() {
+		Set<PhoneNumber> result = new HashSet<PhoneNumber>(
 				phoneNumbers.size());
 		result.addAll(phoneNumbers);
 		return result;

@@ -15,35 +15,29 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-core</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-entitymanager</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    </dependency>
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-orm</artifactId>
     </dependency>
     <dependency>
     	<groupId>com.flowfact.test</groupId>
     	<artifactId>flowfact-testtask-core</artifactId>
     	<version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-    	<groupId>com.flowfact.test</groupId>
-    	<artifactId>flowfact-testtask-vo</artifactId>
-    	<version>1.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.hibernate</groupId>
-    	<artifactId>hibernate-core</artifactId>
-    	<version>4.3.5.Final</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.hibernate</groupId>
-    	<artifactId>hibernate-entitymanager</artifactId>
-    	<version>4.3.5.Final</version>
-    </dependency>
-    <dependency>
-    	<groupId>org.springframework</groupId>
-    	<artifactId>spring-context</artifactId>
-    	<version>4.1.7.RELEASE</version>
     </dependency>
   </dependencies>
 </project>

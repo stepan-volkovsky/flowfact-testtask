@@ -1,4 +1,4 @@
-package com.flowfact.test.dao.model;
+package com.flowfact.test.model;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -10,6 +10,9 @@ import javax.persistence.MappedSuperclass;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties({"createTimestamp", "updateTimestamp"})
 @MappedSuperclass
 public abstract class Model implements Serializable {
 
